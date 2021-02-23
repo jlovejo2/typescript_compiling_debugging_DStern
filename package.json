@@ -1,0 +1,22 @@
+{
+  "name": "typescript_compiling_debugging_dstern",
+  "version": "1.0.0",
+  "description": "repo that runs through compiling and debugging of typescript app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlovejo2/typescript_compiling_debugging_DStern.git"
+  },
+  "author": "James Lovejoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlovejo2/typescript_compiling_debugging_DStern/issues"
+  },
+  "homepage": "https://github.com/jlovejo2/typescript_compiling_debugging_DStern#readme",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}
