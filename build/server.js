@@ -9,3 +9,4 @@ var app = express_1.default();
 app.listen(port);
 app.use(express_1.default.static("public"));
 console.log("Listening on port: " + port);
+//# sourceMappingURL=server.js.map
