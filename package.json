@@ -4,7 +4,9 @@
   "description": "repo that runs through compiling and debugging of typescript app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-server": "tsc -p server",
+    "serve": "node build/server/server.js"
   },
   "repository": {
     "type": "git",
