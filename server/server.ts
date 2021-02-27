@@ -1,6 +1,7 @@
 import express from 'express';
 import * as _ from 'lodash';
 import { Question } from '../@types/Question';
+import path from "path";
 
 const questions: Question[] = [{title: 'How to log in?', content: "How do I log in?", answerCount: 2}]
 
@@ -16,3 +17,8 @@ console.log("Listening on port: " + port);
 app.get("/questions", (_req, res) => {
   res.json(questions);
 })
+
+app.get("/main.js", (_req, res) => {
+  //serves main.js file to the client
+  res.sendFile(path.resolve(__dirname, "..", "client", "client.js"))
+} )
