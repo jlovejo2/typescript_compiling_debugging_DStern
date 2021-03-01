@@ -3,7 +3,23 @@ import express from 'express';
 import { Question } from '../@types/Question';
 import path from "path";
 
-const questions: Question[] = [{title: 'How to log in?', content: "How do I log in?", answerCount: 2}]
+const questions: Question[] = [
+  {
+    title: 'How to log in?',
+    content: "How do I log in?",
+    answerCount: 2
+  },
+  {
+    title: 'Where is the lunch room?',
+    content: "Near the kitchen",
+    answerCount: 2
+  },
+  {
+    title: 'How to debug Typescript?',
+    content: "Use Vscode it is the best",
+    answerCount: 2
+  },
+]
 
 const port: string | number = process.env.port || 1337;
 
