@@ -8,6 +8,8 @@ import { Question } from "../@types/Question";
     const request = await fetch("/questions");
     questions = await request.json();
     console.log(questions);
+
+    debugger;
   }
 
   init();
