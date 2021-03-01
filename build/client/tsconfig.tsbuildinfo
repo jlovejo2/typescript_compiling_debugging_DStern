@@ -156,6 +156,16 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "../../@types/question.d.ts": {
+        "version": "defec4b5309dcbd6213c1f9311f9ef0cdaa7251505495cde6f98135430b8077f",
+        "signature": "defec4b5309dcbd6213c1f9311f9ef0cdaa7251505495cde6f98135430b8077f",
+        "affectsGlobalScope": false
+      },
+      "../../client/client.ts": {
+        "version": "353eb14f9f498642ae7f8b0f1ed4ff6e16e2dc8cb185e46f9cfd1b8a5c1a5a24",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
       "../../node_modules/@types/node/globals.d.ts": {
         "version": "e9a43c3ee6fb8376bb9a4d318a660412c6abcfe5161c106e801e5431b41b7476",
         "signature": "e9a43c3ee6fb8376bb9a4d318a660412c6abcfe5161c106e801e5431b41b7476",
@@ -391,6 +401,16 @@
         "signature": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "affectsGlobalScope": false
       },
+      "../../node_modules/@types/connect/index.d.ts": {
+        "version": "81c14b89fa607b86dd726e2e3e91360cf8155ce97468404324d404a5bd65b2eb",
+        "signature": "81c14b89fa607b86dd726e2e3e91360cf8155ce97468404324d404a5bd65b2eb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/body-parser/index.d.ts": {
+        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "affectsGlobalScope": false
+      },
       "../../node_modules/@types/range-parser/index.d.ts": {
         "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
         "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
@@ -414,16 +434,6 @@
       "../../node_modules/@types/serve-static/index.d.ts": {
         "version": "3b02517f9be71f255eadab9892406055d069167891f1e1ea16c96c4ff1ddda01",
         "signature": "3b02517f9be71f255eadab9892406055d069167891f1e1ea16c96c4ff1ddda01",
-        "affectsGlobalScope": false
-      },
-      "../../node_modules/@types/connect/index.d.ts": {
-        "version": "81c14b89fa607b86dd726e2e3e91360cf8155ce97468404324d404a5bd65b2eb",
-        "signature": "81c14b89fa607b86dd726e2e3e91360cf8155ce97468404324d404a5bd65b2eb",
-        "affectsGlobalScope": false
-      },
-      "../../node_modules/@types/body-parser/index.d.ts": {
-        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
-        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/express/index.d.ts": {
@@ -495,21 +505,11 @@
         "version": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8",
         "signature": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8",
         "affectsGlobalScope": true
-      },
-      "../../@types/question.d.ts": {
-        "version": "defec4b5309dcbd6213c1f9311f9ef0cdaa7251505495cde6f98135430b8077f",
-        "signature": "defec4b5309dcbd6213c1f9311f9ef0cdaa7251505495cde6f98135430b8077f",
-        "affectsGlobalScope": false
-      },
-      "../../server/server.ts": {
-        "version": "04d8c60967b13a6ce3301bc33953183ef6fb5dd351650bd5f3351dcd99c17331",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
       }
     },
     "options": {
       "target": 1,
-      "module": 1,
+      "module": 5,
       "declaration": true,
       "sourceMap": true,
       "outDir": "./",
@@ -519,10 +519,13 @@
       "forceConsistentCasingInFileNames": true,
       "listEmittedFiles": true,
       "composite": true,
-      "project": "../../server",
-      "configFilePath": "../../server/tsconfig.json"
+      "project": "../../client",
+      "configFilePath": "../../client/tsconfig.json"
     },
     "referencedMap": {
+      "../../client/client.ts": [
+        "../../@types/question.d.ts"
+      ],
       "../../node_modules/@types/body-parser/index.d.ts": [
         "../../node_modules/@types/connect/index.d.ts",
         "../../node_modules/@types/node/http.d.ts",
@@ -962,12 +965,6 @@
         "../../node_modules/@types/mime/index.d.ts",
         "../../node_modules/@types/node/http.d.ts",
         "../../node_modules/@types/node/index.d.ts"
-      ],
-      "../../server/server.ts": [
-        "../../@types/question.d.ts",
-        "../../node_modules/@types/express/index.d.ts",
-        "../../node_modules/@types/lodash/index.d.ts",
-        "../../node_modules/@types/node/path.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1414,6 +1411,7 @@
     },
     "semanticDiagnosticsPerFile": [
       "../../@types/question.d.ts",
+      "../../client/client.ts",
       "../../node_modules/@types/body-parser/index.d.ts",
       "../../node_modules/@types/connect/index.d.ts",
       "../../node_modules/@types/express-serve-static-core/index.d.ts",
@@ -1512,8 +1510,7 @@
       "../../node_modules/typescript/lib/lib.es5.d.ts",
       "../../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../../node_modules/typescript/lib/lib.scripthost.d.ts",
-      "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../../server/server.ts"
+      "../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts"
     ]
   },
   "version": "4.1.5"
