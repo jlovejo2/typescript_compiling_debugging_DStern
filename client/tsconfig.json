@@ -3,6 +3,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "es6",
-        "outDir": "../build/client"
+        "outDir": "../build/client",
+        "suppressImplicitAnyIndexErrors": true,
     }
 }
