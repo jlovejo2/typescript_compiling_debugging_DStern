@@ -40,4 +40,13 @@ app.get("/questions", (_req, res) => {
 app.get("/main.js", (_req, res) => {
   //serves main.js file to the client
   res.sendFile(path.resolve(__dirname, "..", "client", "client.js"))
-} )
+})
+
+app.get("/new", (req, res) => {
+  const question = req.query
+  questions.push(question);
+
+  res.json({
+    question, status: "OK"
+  });
+})
