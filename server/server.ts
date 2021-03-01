@@ -1,5 +1,5 @@
 import express from 'express';
-import * as _ from 'lodash';
+// import * as _ from 'lodash';
 import { Question } from '../@types/Question';
 import path from "path";
 
@@ -17,7 +17,7 @@ console.log("Listening on port: " + port);
 app.get("/questions", (_req, res) => {
 
   debugger;
-  
+
   res.json(questions);
 })
 
