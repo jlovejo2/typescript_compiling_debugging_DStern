@@ -12,6 +12,7 @@ app.listen(port);
 app.use(express_1.default.static("public"));
 console.log("Listening on port: " + port);
 app.get("/questions", function (_req, res) {
+    debugger;
     res.json(questions);
 });
 app.get("/main.js", function (_req, res) {
