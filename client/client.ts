@@ -4,7 +4,11 @@ import { Question } from "../@types/Question";
   let questions: Question[] = [];
 
   function render(): void {
-    document.getElementById("Questions").innerHTML = questions.map(({ title, content }) =>
+
+    const questionEL = document.getElementById("Questions")
+
+    if (questionEL) {
+      questionEL.innerHTML = questions.map(({ title, content }) =>
       `
       <li class="list-group-item d-flex justify-content-between lh-condensed">
         <div>
@@ -17,6 +21,9 @@ import { Question } from "../@types/Question";
         </div>
       </li>
       `).join("")
+    } else {
+      throw new Error('Questions element does not exist')
+    }
   }
 
   async function init(): Promise<void> {
